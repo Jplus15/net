@@ -1,4 +1,3 @@
-> Jorge:
 /**
  * Manejador principal del stream de video
  */
