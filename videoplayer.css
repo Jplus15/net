@@ -1,0 +1,161 @@
+ /* Control bar más arriba */
+.vjs-control-bar {
+    background-color: rgba(0, 0, 0, 0) !important; /* Semi-transparente */
+    position: absolute;
+    bottom: 10%; /* Ajustar hacia arriba, dentro del reproductor */
+    transition: all 0.3s ease;
+    z-index: 5;
+    padding: 0 10px;
+}
+
+/* Barra de progreso más visible y roja */
+.vjs-progress-control {
+    width: 100% !important; /* Expandir al ancho completo */
+    height: 6px; /* Grosor de la barra */
+    margin-top: -20px; /* Subir la barra ligeramente */
+    position: absolute;
+    bottom: 50px; /* Colocar encima de los controles */
+    background-color: transparent !important; /* Fondo transparente */
+    left: 0px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.vjs-play-progress {
+    background-color: #ff0000 !important; /* Cambiar el color de progreso a rojo */
+}
+
+.vjs-progress-holder {
+    background-color: rgba(146, 146, 146, 0.6) !important; /* Fondo de la barra */
+}
+
+/* Display time más arriba */
+.vjs-time-control {
+    position: absolute;
+    bottom: 50px; /* Encima de la barra de progreso */
+    left: -10px;
+    color: rgb(255, 255, 255); /* Texto blanco semi-transparente */
+    font-size: 25px;
+}
+
+/* Mostrar control bar solo al pasar el mouse */
+.video-js:hover .vjs-control-bar {
+    opacity: 1;
+}
+
+.video-js .vjs-control-bar {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Personalizar botones */
+.vjs-button {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Controles personalizados */
+.vjs-custom-controls {
+    position: absolute;
+    top: 40%; /* Centrado vertical */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    z-index: 10;
+}
+
+
+
+        .video-js:hover .vjs-control-bar {
+            opacity: 1;
+        }
+
+        .video-js .vjs-control-bar {
+            opacity: 0;
+        }
+
+        .vjs-picture-in-picture-control {
+            display: none !important;
+        }
+
+        .vjs-custom-controls {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            z-index: 10;
+        }
+
+        .vjs-custom-controls button {
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .vjs-custom-controls button:hover {
+            background-color: rgba(255, 255, 255, 0);
+            transform: scale(1.1);
+        }
+
+        .material-icons {
+            font-size: 36px;
+        }
+
+        /* Estilos para el botón de cast en la parte superior derecha */
+.vjs-custom-button.vjs-cast {
+    position: absolute;
+    top: -100px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 30px; /* Tamaño adecuado del icono */
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+.vjs-custom-button.vjs-cast:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+.vjs-custom-button.vjs-cast .material-icons {
+    font-size: 30px; /* Tamaño del icono de cast */
+}
+
+.vjs-title {
+    position: absolute;
+    top: -300px; /* Ajusta según el diseño deseado */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    text-align: center;
+    max-width: 90%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
